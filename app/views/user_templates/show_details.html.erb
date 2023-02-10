@@ -1,0 +1,31 @@
+<h1><%= @the_user.username %></h1>
+
+<dl>
+  <dt>ID</dt>
+    <dd><%= @the_user.id %></dd>
+  <dt>Edit User</dt>
+    <dd></dd>
+</dl>
+
+<h2>Own Photos (<% @the_user.own_photos.count%>)</h2>
+
+<table border="1">
+  <tr>
+    <th>Image</th>
+    <th>Owner</th>
+    <th>Caption</th>
+    <th>Posted</th>
+    <th></th>
+  </tr>
+
+  <% .each do ||%>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <%end%>
+</table>
